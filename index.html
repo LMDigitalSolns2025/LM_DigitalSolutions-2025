@@ -11,8 +11,34 @@
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
       margin: 0;
-      padding: 0;
+      padding: 40px 0 0 0; /* Top padding to avoid overlap with slogan */
       color: #000;
+    }
+    .slogan-banner {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #001f4d;
+      color: #ffcc00;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Lobster', cursive;
+      white-space: nowrap;
+      overflow: hidden;
+      z-index: 9999;
+    }
+    .slogan-text {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 15s linear infinite;
+    }
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
     }
     header {
       background-color: #001f4d;
@@ -42,7 +68,7 @@
       list-style-type: square;
       padding-left: 20px;
     }
-    .contact, .social, .catalog {
+    .contact, .social {
       background-color: #eaeaea;
       padding: 15px;
       margin-top: 20px;
@@ -62,16 +88,13 @@
     a:hover {
       text-decoration: underline;
     }
-    .service-image {
-      display: block;
-      margin: 20px auto;
-      max-width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
   </style>
 </head>
 <body>
+
+<div class="slogan-banner">
+  <div class="slogan-text">THE HOME OF DIGITAL DESIGNs</div>
+</div>
 
 <header>
   <h1 class="logo">LM</h1>
@@ -81,7 +104,6 @@
 
 <section>
   <h2>Huduma Zetu</h2>
-  <img src="New folder/design.jpg" alt="Mfano wa Design" class="service-image">
   <p>LM DIGITAL SOLUTIONS ni wataalamu wa <strong>Digital Designs</strong> ikijumuisha Graphic Designs na usimamizi wa Mitandao ya Kijamii.</p>
   <p>Tuko tayari kukusaidia kukuza na kuibrand biashara yako au event yako kwa huduma zifuatazo:</p>
   <ul>
@@ -104,12 +126,7 @@
     <p>Instagram: <a href="https://www.instagram.com/lm_digitalsolns?igsh=NnVtYWN3dDh4Yjcy" target="_blank">@lm_digitalsolns</a></p>
     <p>Facebook: <a href="https://www.facebook.com/profile.php?id=61578931060461" target="_blank">LM Digital Solutions</a></p>
     <p>YouTube: <a href="https://youtube.com/@lm_digitalsolns?si=DF6NUxTp4OZaFPEp" target="_blank">LM DIGITAL SOLUTIONS</a></p>
-  </div>
-
-  <div class="catalog">
-    <h2>Catalog Yetu</h2>
-    <p>Tembelea Catalog yetu kujionea matangazo yetu Zaidi:</p>
-    <p><a href="https://wa.me/c/255686384002" target="_blank">Fungua Catalog kwenye WhatsApp</a></p>
+    <p>WhatsApp Channel: <a href="https://whatsapp.com/channel/0029VaDnshmE50UiAJohDk3V" target="_blank">LM Digital Solutions Channel</a></p>
   </div>
 </section>
 
