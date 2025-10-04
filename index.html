@@ -11,69 +11,86 @@
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
       margin: 0;
-      padding: 40px 0 0 0; /* Top padding to avoid overlap with slogan */
+      padding: 0;
       color: #000;
     }
-    .slogan-banner {
-      position: fixed;
-      top: 0;
-      width: 100%;
+
+    .top-marquee {
       background-color: #001f4d;
       color: #ffcc00;
-      font-size: 20px;
-      font-weight: bold;
-      font-family: 'Lobster', cursive;
-      white-space: nowrap;
+      padding: 10px 0;
       overflow: hidden;
-      z-index: 9999;
+      white-space: nowrap;
     }
-    .slogan-text {
+
+    .top-marquee span {
       display: inline-block;
       padding-left: 100%;
-      animation: scroll-left 15s linear infinite;
+      animation: scrollText 15s linear infinite;
+      font-size: 16px;
     }
-    @keyframes scroll-left {
-      0% {
-        transform: translateX(0%);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
+
+    @keyframes scrollText {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
     }
+
     header {
       background-color: #001f4d;
       color: #ffcc00;
       padding: 30px 20px;
       text-align: center;
     }
+
     .logo {
       font-family: 'Lobster', cursive;
       font-size: 60px;
       margin: 0;
     }
+
     .brand-name {
       font-family: 'Times New Roman', Times, serif;
       font-size: 24px;
       margin-top: -10px;
     }
+
+    .mission {
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffcc00;
+      animation: fadeMission 8s ease-in-out infinite;
+      margin-top: 10px;
+    }
+
+    @keyframes fadeMission {
+      0% { opacity: 0; }
+      25% { opacity: 1; }
+      87.5% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
     section {
       padding: 20px;
       max-width: 900px;
       margin: auto;
     }
+
     h2 {
       color: #001f4d;
     }
+
     ul {
       list-style-type: square;
       padding-left: 20px;
     }
+
     .contact, .social {
       background-color: #eaeaea;
       padding: 15px;
       margin-top: 20px;
       border-radius: 8px;
     }
+
     footer {
       background-color: #000;
       color: #ffcc00;
@@ -81,10 +98,12 @@
       padding: 10px;
       margin-top: 40px;
     }
+
     a {
       color: #001f4d;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
@@ -92,14 +111,14 @@
 </head>
 <body>
 
-<div class="slogan-banner">
-  <div class="slogan-text">THE HOME OF DIGITAL DESIGNs</div>
+<div class="top-marquee">
+  <span>The home of digital designs</span>
 </div>
 
 <header>
   <h1 class="logo">LM</h1>
   <p class="brand-name">LM DIGITAL SOLUTIONS</p>
-  <p>The Home of Digital Designs</p>
+  <p class="mission">OUR MISSION: EMPOWERING BRANDS WITH CREATIVE GRAPHICS AND SOCIAL MEDIA SOLUTIONS THAT CAPTIVATE AUDIENCES AND DRIVE RESULTS</p>
 </header>
 
 <section>
