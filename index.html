@@ -9,15 +9,17 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background-image: url('https://i.imgur.com/3ZQ3Z5L.jpg'); /* Snowy background */
+      background-size: cover;
+      background-attachment: fixed;
       margin: 0;
       padding: 0;
       color: #000;
     }
 
     .top-marquee {
-      background-color: #001f4d;
-      color: #ffcc00;
+      background-color: #b30000;
+      color: #fff;
       padding: 10px 0;
       overflow: hidden;
       white-space: nowrap;
@@ -36,16 +38,29 @@
     }
 
     header {
-      background-color: #001f4d;
+      background-color: rgba(0, 31, 77, 0.9);
+      background-image: url('https://i.imgur.com/6qz3z8K.png'); /* Christmas lights overlay */
+      background-repeat: repeat-x;
+      background-position: top;
+      background-size: contain;
       color: #ffcc00;
-      padding: 30px 20px;
+      padding: 40px 20px;
       text-align: center;
+      position: relative;
     }
 
     .logo {
       font-family: 'Lobster', cursive;
       font-size: 60px;
       margin: 0;
+    }
+
+    .logo::before {
+      content: "🎄 ";
+    }
+
+    .logo::after {
+      content: " 🎅";
     }
 
     .brand-name {
@@ -62,6 +77,14 @@
       margin-top: 10px;
     }
 
+    .mission::before {
+      content: "✨ ";
+    }
+
+    .mission::after {
+      content: " ✨";
+    }
+
     @keyframes fadeMission {
       0% { opacity: 0; }
       25% { opacity: 1; }
@@ -73,6 +96,8 @@
       padding: 20px;
       max-width: 900px;
       margin: auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
     }
 
     h2 {
@@ -84,19 +109,21 @@
       padding-left: 20px;
     }
 
-    .contact,.catalog,.social {
-      background-color: #eaeaea;
+    .contact, .catalog, .social {
+      background-color: rgba(255, 255, 255, 0.9);
       padding: 15px;
       margin-top: 20px;
       border-radius: 8px;
+      border: 2px dashed #b30000;
     }
 
     footer {
-      background-color: #000;
-      color: #ffcc00;
+      background-color: #004d00;
+      color: #fff;
       text-align: center;
       padding: 10px;
       margin-top: 40px;
+      font-weight: bold;
     }
 
     a {
@@ -107,43 +134,67 @@
     a:hover {
       text-decoration: underline;
     }
+
+    .snowflake {
+      position: fixed;
+      top: -10px;
+      z-index: 9999;
+      color: white;
+      font-size: 24px;
+      animation: fall 10s linear infinite;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(100vh); }
+    }
+
+    .tree {
+      display: block;
+      margin: 20px auto;
+      width: 120px;
+    }
   </style>
 </head>
 <body>
 
+<!-- Snowflakes -->
+<div class="snowflake" style="left:10%;">❄️</div>
+<div class="snowflake" style="left:30%;">❄️</div>
+<div class="snowflake" style="left:50%;">❄️</div>
+<div class="snowflake" style="left:70%;">❄️</div>
+<div class="snowflake" style="left:90%;">❄️</div>
+
+<!-- Optional Christmas music -->
+<audio autoplay loop>
+  <source src="https://www.bensound.com/bensound-music/bensound-christmas.mp3" type="audio/mpeg">
+</audio>
+
 <div class="top-marquee">
-  <span>The home of digital designs              The home of digital designs                       The home of digital designs                        The home of digital designs               The home of digital designs                           The home of digital designs                                   The home of digital designs</span>
+  <span>🎄 Krismasi Njema kutoka LM DIGITAL SOLUTIONS 🎅 | The home of digital designs | Tunawatakia heri na fanaka! 🎁</span>
 </div>
 
 <header>
   <h1 class="logo">LM</h1>
   <p class="brand-name">LM DIGITAL SOLUTIONS</p>
-  <p class="mission">OUR MISSION: 
-EMPOWERING BRANDS WITH CREATIVE GRAPHICS AND SOCIAL MEDIA SOLUTIONS THAT CAPTIVATE AUDIENCES AND DRIVE RESULTS</p>
+  <p class="mission">OUR MISSION: EMPOWERING BRANDS WITH CREATIVE GRAPHICS AND SOCIAL MEDIA SOLUTIONS THAT CAPTIVATE AUDIENCES AND DRIVE RESULTS</p>
 </header>
+
+<!-- Christmas Tree -->
+<img src="https://i.imgur.com/1z6W8XG.png" alt="Christmas Tree" class="tree">
 
 <section>
   <p>LM DIGITAL SOLUTIONS ni wataalamu wa <strong>Digital Designs</strong> ikijumuisha Graphic Designs na usimamizi wa Mitandao ya Kijamii.</p>
-<h2>Huduma Zetu</h2>
+  <h2>Huduma Zetu</h2>
   <p>Tuko tayari kukusaidia kukuza na kuibrand biashara yako au event yako kwa huduma zifuatazo:</p>
   <ul>
- <li><p><b>Tunatengeneza posta za matangazo ya biashara na event mbalimbali (POSTER DESIGN)</b></p>
-<p>- Paper posters kwa ajili ya kuprint.</p>
-<p>- Digital posters kwa ajili ya social posting</p>
-</li>
-<li><p><b>Tunatoa huduma za mitandao ya kijamii (SOCIAL MEDIA)</b></p>
-<p>- Kusimamia na kuendesha mitandao ya kijamii - Social Media Mangement</p>
-<p>- Ushauri nasaha wa kimtandao - Social Media Consultancy</p>
-<p>- Kutengeneza maudhui ya kimtandao - Social Content creation</p>
-<p>Zingatia: huduma hii ni kwa mitandao ya Instagram, WhatsApp na YouTube pekee.</p> 
-</li>
-<li><p><b>Tunatengeneza Logo (LOGO MAKING)</b></p>
-<p>- Logo Design & Animation</p>
-</li>
-<li><p><b>Tunatengeneza kadi za biashara, mialiko na utambulisho.(CARD DESIGN)</b></p></li>
-<li><p><b>Tunatengeneza lebo za biashara na vifungashio(LABEL DESIGN)</b></p></li>
-<li><p><b>Tunatengeneza vipeperushi vya aina zote(BRONCURES & FLYERS DESIGN)</b></p></li>
-<li><p><b>Tunafanya editing na production ya video za matangazo na matukio mbalimbali (VIDEO EDITING & VIDEO PRODUCTION)</b></p></li>
+    <li><b>Poster Design</b> – Paper posters & Digital posters</li>
+    <li><b>Social Media</b> – Management, Consultancy, Content Creation (Instagram, WhatsApp, YouTube)</li>
+    <li><b>Logo Making</b> – Design & Animation</li>
+    <li><b>Card Design</b> – Biashara, Mialiko, Utambulisho</li>
+    <li><b>Label Design</b> – Lebo za bidhaa na vifungashio</li>
+    <li><b>Bronchures & Flyers</b> – Vipeperushi vya aina zote</li>
+    <li><b>Video Editing & Production</b> – Matangazo na matukio</li>
   </ul>
 
   <div class="contact">
@@ -153,11 +204,11 @@ EMPOWERING BRANDS WITH CREATIVE GRAPHICS AND SOCIAL MEDIA SOLUTIONS THAT CAPTIVA
     <p>Mahali: MBEZI BEACH B, Dar es Salaam</p>
   </div>
 
-<div class="catalog">
- <h2>Whatsapp catalog</h2>
-<p>Tembelea catalog yetu kujionea matangazo ya huduma zetu na design mbalimbali</p>
-<p><a href="https://wa.me/c/255686384002" target="_blank">lm_digitalsolns catalog</a></p>
- </div>
+  <div class="catalog">
+    <h2>Whatsapp catalog</h2>
+    <p>Tembelea catalog yetu kujionea matangazo ya huduma zetu na design mbalimbali</p>
+    <p><a href="https://wa.me/c/255686384002" target="_blank">lm_digitalsolns catalog</a></p>
+  </div>
 
   <div class="social">
     <h2>Mitandao ya Kijamii</h2>
@@ -169,10 +220,8 @@ EMPOWERING BRANDS WITH CREATIVE GRAPHICS AND SOCIAL MEDIA SOLUTIONS THAT CAPTIVA
 </section>
 
 <footer>
-  <p>&copy; 2025 LM DIGITAL SOLUTIONS. Karibuni Sana!</p>
+  <p>🎁 &copy; 2025 LM DIGITAL SOLUTIONS. Tunawatakia Krismasi Njema na Mwaka Mpya wenye mafanikio! 🎉</p>
 </footer>
 
 </body>
 </html>
-
-
