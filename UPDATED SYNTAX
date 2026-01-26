@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LM DIGITAL SOLUTIONS</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #000;
+    }
+
+    .top-marquee {
+      background-color: #001f4d;
+      color: #ffcc00;
+      padding: 10px 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .top-marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scrollText 15s linear infinite;
+      font-size: 16px;
+    }
+
+    @keyframes scrollText {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    header {
+      background-color: #001f4d;
+      color: #ffcc00;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .logo {
+      font-family: 'Lobster', cursive;
+      font-size: 60px;
+      margin: 0;
+    }
+
+    .brand-name {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 24px;
+      margin-top: -10px;
+    }
+
+    .mission {
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffcc00;
+      animation: fadeMission 8s ease-in-out infinite;
+      margin-top: 10px;
+    }
+
+    @keyframes fadeMission {
+      0% { opacity: 0; }
+      25% { opacity: 1; }
+      87.5% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #001f4d;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .contact,.catalog,.social {
+      background-color: #eaeaea;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #000;
+      color: #ffcc00;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+
+    a {
+      color: #001f4d;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-marquee">
+  <span>The home of digital designs              The home of digital designs                       The home of digital designs                        The home of digital designs               The home of digital designs                           The home of digital designs                                   The home of digital designs</span>
+</div>
+
+<header>
+  <h1 class="logo">LM</h1>
+  <p class="brand-name">LM DIGITAL SOLUTIONS</p>
+  <p class="mission">OUR MISSION: 
+EMPOWERING BRANDS WITH CREATIVE GRAPHICS AND SOCIAL MEDIA SOLUTIONS THAT CAPTIVATE AUDIENCES AND DRIVE RESULTS</p>
+</header>
+
+<section>
+  <p>LM DIGITAL SOLUTIONS ni wataalamu wa <strong>Digital Designs</strong> ikijumuisha Graphic Designs na usimamizi wa Mitandao ya Kijamii.</p>
+<h2>Huduma Zetu</h2>
+  <p>Tuko tayari kukusaidia kukuza na kuibrand biashara yako au event yako kwa huduma zifuatazo:</p>
+  <ul>
+ <li><p><b>Tunatengeneza posta za matangazo ya biashara na event mbalimbali (POSTER DESIGN)</b></p>
+<p>- Paper posters kwa ajili ya kuprint.</p>
+<p>- Digital posters kwa ajili ya social posting</p>
+</li>
+<li><p><b>Tunatoa huduma za mitandao ya kijamii (SOCIAL MEDIA)</b></p>
+<p>- Kusimamia na kuendesha mitandao ya kijamii - Social Media Mangement</p>
+<p>- Ushauri nasaha wa kimtandao - Social Media Consultancy</p>
+<p>- Kutengeneza maudhui ya kimtandao - Social Content creation</p>
+<p>Zingatia: huduma hii ni kwa mitandao ya Instagram, WhatsApp na YouTube pekee.</p> 
+</li>
+<li><p><b>Tunatengeneza Logo (LOGO MAKING)</b></p>
+<p>- Logo Design & Animation</p>
+</li>
+<li><p><b>Tunatengeneza kadi za biashara, mialiko na utambulisho.(CARD DESIGN)</b></p></li>
+<li><p><b>Tunatengeneza lebo za biashara na vifungashio(LABEL DESIGN)</b></p></li>
+<li><p><b>Tunatengeneza vipeperushi vya aina zote(BRONCURES & FLYERS DESIGN)</b></p></li>
+<li><p><b>Tunafanya editing na production ya video za matangazo na matukio mbalimbali (VIDEO EDITING & VIDEO PRODUCTION)</b></p></li>
+  </ul>
+
+  <div class="contact">
+    <h2>Wasiliana Nasi</h2>
+    <p>Simu: 0765661261 / 0686384002</p>
+    <p>Email: <a href="mailto:lmmakenz@gmail.com">lmmakenz@gmail.com</a></p>
+    <p>Mahali: MBEZI BEACH B, Dar es Salaam</p>
+  </div>
+
+<div class="catalog">
+ <h2>Whatsapp catalog</h2>
+<p>Tembelea catalog yetu kujionea matangazo ya huduma zetu na design mbalimbali</p>
+<p><a href="https://wa.me/c/255686384002" target="_blank">lm_digitalsolns catalog</a></p>
+ </div>
+
+  <div class="social">
+    <h2>Mitandao ya Kijamii</h2>
+    <p>Instagram: <a href="https://www.instagram.com/lm_digitalsolns?igsh=NnVtYWN3dDh4Yjcy" target="_blank">@lm_digitalsolns</a></p>
+    <p>Facebook: <a href="https://www.facebook.com/profile.php?id=61578931060461" target="_blank">LM Digital Solutions</a></p>
+    <p>YouTube: <a href="https://youtube.com/@lm_digitalsolns?si=DF6NUxTp4OZaFPEp" target="_blank">LM DIGITAL SOLUTIONS</a></p>
+    <p>WhatsApp Channel: <a href="https://whatsapp.com/channel/0029VaDnshmE50UiAJohDk3V" target="_blank">LM Digital Solutions Channel</a></p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 LM DIGITAL SOLUTIONS. Karibuni Sana!</p>
+</footer>
+
+</body>
+</html>
+
+
+
