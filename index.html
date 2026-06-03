@@ -71,7 +71,7 @@
 
     section {
       padding: 20px;
-      max-width: 900px;
+      max-width: 1100px;
       margin: auto;
     }
 
@@ -79,9 +79,60 @@
       color: #001f4d;
     }
 
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
+    .services-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .service-card {
+      flex: 1 1 250px;
+      max-width: 280px;
+      background-color: #001f4d; /* Dark Blue */
+      color: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card-header {
+      background-color: #ffcc00; /* Golden Yellow */
+      color: #001f4d;
+      font-weight: bold;
+      padding: 12px;
+      font-size: 18px;
+    }
+
+    .service-card-body {
+      padding: 15px;
+    }
+
+    .service-card-body p {
+      margin: 8px 0;
+    }
+
+    .order-btn {
+      display: inline-block;
+      margin-top: 12px;
+      background-color: #ffcc00;
+      color: #001f4d;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .order-btn:hover {
+      background-color: #e6b800;
     }
 
     .contact,.catalog,.social {
@@ -127,58 +178,77 @@ EMPOWERING BRANDS WITH CREATIVE GRAPHICS AND SOCIAL MEDIA SOLUTIONS THAT CAPTIVA
   <h2>Huduma Zetu</h2>
   <p>Tuko tayari kukusaidia kukuza na kuibrand biashara yako au event yako kwa huduma zifuatazo:</p>
 
-  <div class="service-section">
-    <h3>Poster Design</h3>
-    <p>- Paper posters kwa ajili ya kuprint.</p>
-    <p>- Digital posters kwa ajili ya social posting.</p>
-    <a href="https://wa.me/p/26875725015364005/255686384002" target="_blank" class="order-btn">Order Poster Design</a>
-  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-card-header">Poster Design</div>
+      <div class="service-card-body">
+        <p>- Paper posters kwa ajili ya kuprint.</p>
+        <p>- Digital posters kwa ajili ya social posting.</p>
+        <a href="https://wa.me/p/26875725015364005/255686384002" target="_blank" class="order-btn">Order Poster Design</a>
+      </div>
+    </div>
 
-  <div class="service-section">
-    <h3>Social Media Services</h3>
-    <p>- Social Media Management</p>
-    <p>- Social Media Consultancy</p>
-    <p>- Social Content Creation (Instagram, WhatsApp, YouTube)</p>
-    <a href="https://wa.me/p/24511852741788784/255686384002" target="_blank" class="order-btn">Order Social Media Services</a>
-  </div>
+    <div class="service-card">
+      <div class="service-card-header">Social Media Services</div>
+      <div class="service-card-body">
+        <p>- Social Media Management</p>
+        <p>- Social Media Consultancy</p>
+        <p>- Social Content Creation (Instagram, WhatsApp, YouTube)</p>
+        <a href="https://wa.me/p/24511852741788784/255686384002" target="_blank" class="order-btn">Order Social Media Services</a>
+      </div>
+    </div>
 
-  <div class="service-section">
-    <h3>Logo Design</h3>
-    <p>- Logo Design & Animation</p>
-    <a href="https://wa.me/p/26432617423016496/255686384002" target="_blank" class="order-btn">Order Logo Design</a>
-  </div>
+    <div class="service-card">
+      <div class="service-card-header">Logo Design</div>
+      <div class="service-card-body">
+        <p>- Logo Design & Animation</p>
+        <a href="https://wa.me/p/26432617423016496/255686384002" target="_blank" class="order-btn">Order Logo Design</a>
+      </div>
+    </div>
 
-  <div class="service-section">
-    <h3>Card Design</h3>
-    <p>- Business cards, invitations, ID cards</p>
-    <a href="https://wa.me/p/24637024845934851/255686384002" target="_blank" class="order-btn">Order Card Design</a>
-  </div>
+    <div class="service-card">
+      <div class="service-card-header">Card Design</div>
+      <div class="service-card-body">
+        <p>- Business cards, invitations, ID cards</p>
+        <a href="https://wa.me/p/24637024845934851/255686384002" target="_blank" class="order-btn">Order Card Design</a>
+      </div>
+    </div>
 
-  <div class="service-section">
-    <h3>Label Design</h3>
-    <p>- Business labels & packaging</p>
-    <a href="https://wa.me/p/24431499696546573/255686384002" target="_blank" class="order-btn">Order Label Design</a>
-  </div>
+    <div class="service-card">
+      <div class="service-card-header">Label Design</div>
+      <div class="service-card-body">
+        <p>- Business labels & packaging</p>
+        <a href="https://wa.me/p/24431499696546573/255686384002" target="_blank" class="order-btn">Order Label Design</a>
+      </div>
+    </div>
 
-  <div class="service-section">
-    <h3>Brochures & Flyers Design</h3>
-    <a href="https://wa.me/p/25611568398428536/255686384002" target="_blank" class="order-btn">Order Brochures & Flyers</a>
-  </div>
+    <div class="service-card">
+      <div class="service-card-header">Brochures & Flyers Design</div>
+      <div class="service-card-body">
+        <a href="https://wa.me/p/25611568398428536/255686384002" target="_blank" class="order-btn">Order Brochures & Flyers</a>
+      </div>
+    </div>
 
-  <div class="service-section">
-    <h3>Video Editing & Production</h3>
-    <a href="https://wa.me/p/9773384476098581/255686384002" target="_blank" class="order-btn">Order Video Editing & Production</a>
-  </div>
+    <div class="service-card">
+      <div class="service-card-header">Video Editing & Production</div>
+      <div class="service-card-body">
+        <a href="https://wa.me/p/9773384476098581/255686384002" target="_blank" class="order-btn">Order Video Editing & Production</a>
+      </div>
+    </div>
 
-  <div class="service-section">
-    <h3>Lyrics Videos Design</h3>
-    <p>- Tunatengeneza lyrics videos kwa ajili ya audio songs</p>
-    <a href="https://wa.me/p/24362646990094586/255686384002" target="_blank" class="order-btn">Order Lyrics Video Design</a>
-  </div>
+    <div class="service-card">
+      <div class="service-card-header">Lyrics Videos Design</div>
+      <div class="service-card-body">
+        <p>- Tunatengeneza lyrics videos kwa ajili ya audio songs</p>
+        <a href="https://wa.me/p/24362646990094586/255686384002" target="_blank" class="order-btn">Order Lyrics Video Design</a>
+      </div>
+    </div>
 
-  <div class="service-section">
-    <h3>Company / Business Profile</h3>
-    <p>- Tunatengeneza wasifu bora na wa kuvutia wa kampuni au biashara yako (Corporate & Visual Profiles)</p>
+    <div class="service-card">
+      <div class="service-card-header">Company / Business Profile</div>
+      <div class="service-card-body">
+        <p>- Tunatengeneza wasifu bora na wa kuvutia wa kampuni au biashara yako (Corporate & Visual Profiles)</p>
+        
     <a href="https://wa.me/p/24337649609238982/255686384002" target="_blank" class="order-btn">Order Company/Business Profile</a>
   </div>
 </section>
